@@ -1,0 +1,136 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+img {
+    max-width: 100%;
+}
+
+html {
+    
+    background-color: #3535EC;
+    font-family: 'Livvic', sans-serif;
+    line-height: 1;
+}
+.conteiner {
+    
+    width: 350px;
+    
+    margin: 32px auto 0 auto;
+
+}
+.pannel {
+    background-color: #120945;
+    padding: 16px 24px;
+    border-radius: 8px;
+
+    position: absolute;
+    top: 100px;
+    width: 100%;
+}
+h1 {
+    text-align: center;
+    color: #de7eb6;
+    margin-bottom: 24px;
+    font-size: 25px;
+
+}
+.xmas{
+    position: relative;
+    height: 600px;
+   
+}
+.counter {
+    display: flex;
+    justify-content: space-between;
+}
+.counter-block {
+    color: white;
+    text-align: center;
+    font-weight: 600;
+}
+.counter-block-numero {
+    font-size: 40px;
+}
+
+.counter-block-label{
+    font-size: 20px;
+}
+.counter-block:last-child{
+    color: #f24d41
+}
+/* regali */
+.gift {
+    position: absolute;
+    width: 120px;
+    
+}
+.gift_1 {
+    bottom: 50px;
+    right: 30px;
+}
+.gift_2{
+    bottom: 50px;
+    left: 36px;
+    width: 120px;
+}
+.gift_3 {
+    bottom: 110px;
+    left: 68px;
+    width: 60px;
+}
+.ball{
+    position: absolute;
+    width: 65px;
+}
+.ball_1 {
+    top:340px;
+    left:86px;
+}
+.ball_2 {
+    top: 247px;
+    left: 110px;
+}
+.ball_3 {
+    top: 255px;
+    right: 102px;
+}
+.ball_4{
+    top:360px;
+    right: 75px;
+}
+.ball_5 {
+    top:326px;
+    left:155px;
+}
+.ball:hover {
+    animation-name: bump;
+    animation-duration: 0.2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+.gift:hover {
+    animation-name: jingle;
+    animation-duration: 0.2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+/*animazioni*/
+@keyframes jingle {
+    from {
+        transform: rotate(-15deg);
+    }
+    to {
+        transform: rotate(15deg);
+    }
+}
+@keyframes bump {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.2);
+    }
+    
+}
